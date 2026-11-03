@@ -1,0 +1,562 @@
+{
+ "groups": [
+  {
+   "id": "consonant",
+   "title": "Гийгүүлэгч (声母)"
+  },
+  {
+   "id": "vowel",
+   "title": "Эгшиг (韵母)"
+  },
+  {
+   "id": "tone",
+   "title": "Аялгуу (声调)"
+  },
+  {
+   "id": "compound",
+   "title": "Нийлмэл эгшиг"
+  }
+ ],
+ "letters": [
+  {
+   "id": "p01",
+   "ch": "b",
+   "group": "consonant",
+   "sound": "б (бо)",
+   "say": "波",
+   "ex_ko": "爸爸",
+   "ex_mn": "аав"
+  },
+  {
+   "id": "p02",
+   "ch": "p",
+   "group": "consonant",
+   "sound": "п (по, амьсгалтай)",
+   "say": "坡",
+   "ex_ko": "朋友",
+   "ex_mn": "найз"
+  },
+  {
+   "id": "p03",
+   "ch": "m",
+   "group": "consonant",
+   "sound": "м (мо)",
+   "say": "摸",
+   "ex_ko": "妈妈",
+   "ex_mn": "ээж"
+  },
+  {
+   "id": "p04",
+   "ch": "f",
+   "group": "consonant",
+   "sound": "ф (фо)",
+   "say": "佛",
+   "ex_ko": "飞机",
+   "ex_mn": "онгоц"
+  },
+  {
+   "id": "p05",
+   "ch": "d",
+   "group": "consonant",
+   "sound": "д (дө)",
+   "say": "得",
+   "ex_ko": "大",
+   "ex_mn": "том"
+  },
+  {
+   "id": "p06",
+   "ch": "t",
+   "group": "consonant",
+   "sound": "т (тө, амьсгалтай)",
+   "say": "特",
+   "ex_ko": "他",
+   "ex_mn": "тэр"
+  },
+  {
+   "id": "p07",
+   "ch": "n",
+   "group": "consonant",
+   "sound": "н (нө)",
+   "say": "讷",
+   "ex_ko": "你",
+   "ex_mn": "чи"
+  },
+  {
+   "id": "p08",
+   "ch": "l",
+   "group": "consonant",
+   "sound": "л (лө)",
+   "say": "勒",
+   "ex_ko": "老师",
+   "ex_mn": "багш"
+  },
+  {
+   "id": "p09",
+   "ch": "g",
+   "group": "consonant",
+   "sound": "г (гө)",
+   "say": "哥",
+   "ex_ko": "狗",
+   "ex_mn": "нохой"
+  },
+  {
+   "id": "p10",
+   "ch": "k",
+   "group": "consonant",
+   "sound": "к (кө, амьсгалтай)",
+   "say": "科",
+   "ex_ko": "看",
+   "ex_mn": "харах"
+  },
+  {
+   "id": "p11",
+   "ch": "h",
+   "group": "consonant",
+   "sound": "х (хө)",
+   "say": "喝",
+   "ex_ko": "好",
+   "ex_mn": "сайн"
+  },
+  {
+   "id": "p12",
+   "ch": "j",
+   "group": "consonant",
+   "sound": "ж (жи, зөөлөн)",
+   "say": "鸡",
+   "ex_ko": "家",
+   "ex_mn": "гэр"
+  },
+  {
+   "id": "p13",
+   "ch": "q",
+   "group": "consonant",
+   "sound": "ч (чи, амьсгалтай)",
+   "say": "七",
+   "ex_ko": "去",
+   "ex_mn": "явах"
+  },
+  {
+   "id": "p14",
+   "ch": "x",
+   "group": "consonant",
+   "sound": "ш (ши, зөөлөн)",
+   "say": "西",
+   "ex_ko": "谢谢",
+   "ex_mn": "баярлалаа"
+  },
+  {
+   "id": "p15",
+   "ch": "zh",
+   "group": "consonant",
+   "sound": "жр (хэл буржийлгасан ж)",
+   "say": "知",
+   "ex_ko": "中国",
+   "ex_mn": "Хятад"
+  },
+  {
+   "id": "p16",
+   "ch": "ch",
+   "group": "consonant",
+   "sound": "чр (хэл буржийлгасан ч)",
+   "say": "吃",
+   "ex_ko": "茶",
+   "ex_mn": "цай"
+  },
+  {
+   "id": "p17",
+   "ch": "sh",
+   "group": "consonant",
+   "sound": "шр (хэл буржийлгасан ш)",
+   "say": "诗",
+   "ex_ko": "书",
+   "ex_mn": "ном"
+  },
+  {
+   "id": "p18",
+   "ch": "r",
+   "group": "consonant",
+   "sound": "рж (р, ж-ийн дунд)",
+   "say": "日",
+   "ex_ko": "人",
+   "ex_mn": "хүн"
+  },
+  {
+   "id": "p19",
+   "ch": "z",
+   "group": "consonant",
+   "sound": "дз (дзы)",
+   "say": "资",
+   "ex_ko": "字",
+   "ex_mn": "үсэг"
+  },
+  {
+   "id": "p20",
+   "ch": "c",
+   "group": "consonant",
+   "sound": "ц (цы, амьсгалтай)",
+   "say": "次",
+   "ex_ko": "菜",
+   "ex_mn": "хоол"
+  },
+  {
+   "id": "p21",
+   "ch": "s",
+   "group": "consonant",
+   "sound": "с (сы)",
+   "say": "思",
+   "ex_ko": "四",
+   "ex_mn": "дөрөв"
+  },
+  {
+   "id": "p22",
+   "ch": "a",
+   "group": "vowel",
+   "sound": "а",
+   "say": "啊",
+   "ex_ko": "八",
+   "ex_mn": "найм"
+  },
+  {
+   "id": "p23",
+   "ch": "o",
+   "group": "vowel",
+   "sound": "о (уо)",
+   "say": "喔",
+   "ex_ko": "我",
+   "ex_mn": "би"
+  },
+  {
+   "id": "p24",
+   "ch": "e",
+   "group": "vowel",
+   "sound": "э (ы руу)",
+   "say": "鹅",
+   "ex_ko": "饿",
+   "ex_mn": "өлсөх"
+  },
+  {
+   "id": "p25",
+   "ch": "i",
+   "group": "vowel",
+   "sound": "и",
+   "say": "衣",
+   "ex_ko": "一",
+   "ex_mn": "нэг"
+  },
+  {
+   "id": "p26",
+   "ch": "u",
+   "group": "vowel",
+   "sound": "у",
+   "say": "乌",
+   "ex_ko": "五",
+   "ex_mn": "тав"
+  },
+  {
+   "id": "p27",
+   "ch": "ü",
+   "group": "vowel",
+   "sound": "ү (уруулаа дугуйлсан и)",
+   "say": "鱼",
+   "ex_ko": "女",
+   "ex_mn": "эмэгтэй"
+  },
+  {
+   "id": "p28",
+   "ch": "ai",
+   "group": "vowel",
+   "sound": "ай",
+   "say": "爱",
+   "ex_ko": "白",
+   "ex_mn": "цагаан"
+  },
+  {
+   "id": "p29",
+   "ch": "ei",
+   "group": "vowel",
+   "sound": "эй",
+   "say": "黑",
+   "ex_ko": "北",
+   "ex_mn": "хойд"
+  },
+  {
+   "id": "p30",
+   "ch": "ao",
+   "group": "vowel",
+   "sound": "ао (ау)",
+   "say": "奥",
+   "ex_ko": "好",
+   "ex_mn": "сайн"
+  },
+  {
+   "id": "p31",
+   "ch": "ou",
+   "group": "vowel",
+   "sound": "оу",
+   "say": "欧",
+   "ex_ko": "手",
+   "ex_mn": "гар"
+  },
+  {
+   "id": "p32",
+   "ch": "an",
+   "group": "vowel",
+   "sound": "ан",
+   "say": "安",
+   "ex_ko": "饭",
+   "ex_mn": "хоол"
+  },
+  {
+   "id": "p33",
+   "ch": "en",
+   "group": "vowel",
+   "sound": "эн (ын)",
+   "say": "恩",
+   "ex_ko": "人",
+   "ex_mn": "хүн"
+  },
+  {
+   "id": "p34",
+   "ch": "ang",
+   "group": "vowel",
+   "sound": "ан (хамраар, ng)",
+   "say": "昂",
+   "ex_ko": "忙",
+   "ex_mn": "завгүй"
+  },
+  {
+   "id": "p35",
+   "ch": "eng",
+   "group": "vowel",
+   "sound": "эн (хамраар, ng)",
+   "say": "冷",
+   "ex_ko": "朋友",
+   "ex_mn": "найз"
+  },
+  {
+   "id": "p36",
+   "ch": "ong",
+   "group": "vowel",
+   "sound": "он (хамраар, ung)",
+   "say": "东",
+   "ex_ko": "中国",
+   "ex_mn": "Хятад"
+  },
+  {
+   "id": "p37",
+   "ch": "mā",
+   "group": "tone",
+   "sound": "1-р аялгуу: өндөр тэгш",
+   "say": "妈",
+   "ex_ko": "妈妈",
+   "ex_mn": "ээж"
+  },
+  {
+   "id": "p38",
+   "ch": "má",
+   "group": "tone",
+   "sound": "2-р аялгуу: доороос дээш өргөх",
+   "say": "麻",
+   "ex_ko": "学",
+   "ex_mn": "сурах"
+  },
+  {
+   "id": "p39",
+   "ch": "mǎ",
+   "group": "tone",
+   "sound": "3-р аялгуу: доош бууж дахин өгсөх",
+   "say": "马",
+   "ex_ko": "我",
+   "ex_mn": "би"
+  },
+  {
+   "id": "p40",
+   "ch": "mà",
+   "group": "tone",
+   "sound": "4-р аялгуу: огцом доош унах",
+   "say": "骂",
+   "ex_ko": "是",
+   "ex_mn": "мөн, байх"
+  },
+  {
+   "id": "p41",
+   "ch": "ma",
+   "group": "tone",
+   "sound": "Сул аялгуу: богино, хөнгөн",
+   "say": "吗",
+   "ex_ko": "爸爸",
+   "ex_mn": "аав"
+  },
+  {
+   "id": "p42",
+   "ch": "ia",
+   "group": "compound",
+   "sound": "я (иа)",
+   "say": "呀",
+   "ex_ko": "家",
+   "ex_mn": "гэр"
+  },
+  {
+   "id": "p43",
+   "ch": "ie",
+   "group": "compound",
+   "sound": "е (иэ)",
+   "say": "耶",
+   "ex_ko": "谢谢",
+   "ex_mn": "баярлалаа"
+  },
+  {
+   "id": "p44",
+   "ch": "iao",
+   "group": "compound",
+   "sound": "яо (яу)",
+   "say": "要",
+   "ex_ko": "小",
+   "ex_mn": "жижиг"
+  },
+  {
+   "id": "p45",
+   "ch": "iu",
+   "group": "compound",
+   "sound": "ёу (иоу)",
+   "say": "六",
+   "ex_ko": "九",
+   "ex_mn": "ес"
+  },
+  {
+   "id": "p46",
+   "ch": "ian",
+   "group": "compound",
+   "sound": "ен (иэн)",
+   "say": "烟",
+   "ex_ko": "钱",
+   "ex_mn": "мөнгө"
+  },
+  {
+   "id": "p47",
+   "ch": "in",
+   "group": "compound",
+   "sound": "ин",
+   "say": "音",
+   "ex_ko": "今天",
+   "ex_mn": "өнөөдөр"
+  },
+  {
+   "id": "p48",
+   "ch": "iang",
+   "group": "compound",
+   "sound": "ян (хамраар)",
+   "say": "羊",
+   "ex_ko": "想",
+   "ex_mn": "хүсэх"
+  },
+  {
+   "id": "p49",
+   "ch": "ing",
+   "group": "compound",
+   "sound": "ин (хамраар)",
+   "say": "英",
+   "ex_ko": "听",
+   "ex_mn": "сонсох"
+  },
+  {
+   "id": "p50",
+   "ch": "ua",
+   "group": "compound",
+   "sound": "уа",
+   "say": "蛙",
+   "ex_ko": "花",
+   "ex_mn": "цэцэг"
+  },
+  {
+   "id": "p51",
+   "ch": "uo",
+   "group": "compound",
+   "sound": "уо",
+   "say": "窝",
+   "ex_ko": "多",
+   "ex_mn": "олон"
+  },
+  {
+   "id": "p52",
+   "ch": "uai",
+   "group": "compound",
+   "sound": "уай",
+   "say": "外",
+   "ex_ko": "快",
+   "ex_mn": "хурдан"
+  },
+  {
+   "id": "p53",
+   "ch": "ui",
+   "group": "compound",
+   "sound": "уэй",
+   "say": "为",
+   "ex_ko": "对",
+   "ex_mn": "зөв"
+  },
+  {
+   "id": "p54",
+   "ch": "uan",
+   "group": "compound",
+   "sound": "уан",
+   "say": "弯",
+   "ex_ko": "晚",
+   "ex_mn": "орой"
+  },
+  {
+   "id": "p55",
+   "ch": "un",
+   "group": "compound",
+   "sound": "уэн (ун)",
+   "say": "问",
+   "ex_ko": "春",
+   "ex_mn": "хавар"
+  },
+  {
+   "id": "p56",
+   "ch": "uang",
+   "group": "compound",
+   "sound": "уан (хамраар)",
+   "say": "王",
+   "ex_ko": "黄",
+   "ex_mn": "шар"
+  },
+  {
+   "id": "p57",
+   "ch": "üe",
+   "group": "compound",
+   "sound": "үэ",
+   "say": "月",
+   "ex_ko": "学",
+   "ex_mn": "сурах"
+  },
+  {
+   "id": "p58",
+   "ch": "üan",
+   "group": "compound",
+   "sound": "үэн",
+   "say": "元",
+   "ex_ko": "远",
+   "ex_mn": "хол"
+  },
+  {
+   "id": "p59",
+   "ch": "ün",
+   "group": "compound",
+   "sound": "үн",
+   "say": "运",
+   "ex_ko": "云",
+   "ex_mn": "үүл"
+  },
+  {
+   "id": "p60",
+   "ch": "er",
+   "group": "compound",
+   "sound": "эр (хэл буржийлгана)",
+   "say": "二",
+   "ex_ko": "儿子",
+   "ex_mn": "хүү"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", "Noto Sans", system-ui, sans-serif;
+  --font-ko: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* Theme: Pictures\Saved Pictures\Gato_ Hello kitty.jpg — ягаан дэвсгэр, хүрэн шугам, ягаан тууз, шар хамар.
+     Хэсгийн өнгө: 听力 ягаан (тууз), 书写 зөөлөн ногоон, 阅读 шар (хамар), 词汇 лаванда */
+  --color-listening: #e8337f;
+  --color-listening-soft: #ffd9ea;
+  --color-writing: #5f8f5a;
+  --color-writing-soft: #e6f0df;
+  --color-reading: #b7801a;
+  --color-reading-soft: #fdf1d2;
+  --color-vocab: #9663b4;
+  --color-vocab-soft: #f3e3fb;
+
+  /* Тод гахай ягаан — саарал/бүдэг холихгүй, цэвэр ягаан */
+  --color-bg: #ffc2dc;
+  --color-surface: #fff0f7;
+  --color-line: #ff9ec8;
+  --color-ink: #5c1638;
+  --color-muted: #a3446f;
+  --color-accent: #ff4f9a;
+  --color-good: #4f9a5d;
+  --color-bad: #d1435b;
+  --color-bow: #ff6fae;
+}
+
+@layer base {
+  .dark {
+    /* Какао-хүрэн бараан хувилбар, ягаан өнгөө хадгална */
+    --color-bg: #24181a;
+    --color-surface: #302124;
+    --color-line: #4a3439;
+    --color-ink: #fbe4ea;
+    --color-muted: #c4a2a9;
+    --color-accent: #f48fb4;
+    --color-listening: #f59ab9;
+    --color-listening-soft: #4a2232;
+    --color-writing: #9cc995;
+    --color-writing-soft: #233420;
+    --color-reading: #f2c94c;
+    --color-reading-soft: #3e3014;
+    --color-vocab: #caa6de;
+    --color-vocab-soft: #35263f;
+    --color-good: #8fd19a;
+    --color-bad: #f58a9b;
+    --color-bow: #e77fa3;
+  }
+  html {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply font-sans antialiased;
+    background: var(--color-bg);
+  }
+  :lang(zh),
+  :lang(zh-CN),
+  .ko {
+    font-family: var(--font-ko);
+    
+  }
+  button {
+    cursor: pointer;
+  }
+}
