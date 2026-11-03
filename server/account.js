@@ -216,7 +216,7 @@ export async function handleAccount(body = {}, authHeader = "") {
       }
 
       default:
-        return err(400, "Үйлдэл тодорхойгүй.");
+        return err(400, "Үйлдэл  тодорхойгүй.");
     }
   } catch (e) {
     console.error("account error", e);
