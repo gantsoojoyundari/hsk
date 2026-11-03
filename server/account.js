@@ -1,5 +1,5 @@
-// Нэр + 4 оронтой кодоор нэвтрэх аккаунт. Имэйл шаардлагагүй.
-// Production-д Upstash Redis (Vercel Storage) REST API ашиглана; dev-д санах ойд хадгална.
+ // Нэр + 4 оронтой кодоор нэвтрэх аккаунт. Имэйл шаардлагагүй.
+// Production-д Supabase (kv хүснэгт) эсвэл Upstash Redis ашиглана; dev-д санах ойд хадгална.
 import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
 
 const SESSION_TTL = 60 * 60 * 24 * 365; // 1 жил
@@ -17,9 +17,52 @@ function redisEnv() {
   return url && token ? { url, token } : null;
 }
 
+function supaEnv() {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SECRET_KEY;
+  return url && key ? { url: url.replace(/\/$/, ""), key } : null;
+}
+
+async function rpc(fn, params) {
+  const { url, key } = supaEnv();
+  const r = await fetch(`${url}/rest/v1/rpc/${fn}`, {
+    method: "POST",
+    headers: { apikey: key, "Content-Type": "application/json" },
+    body: JSON.stringify(params),
+  });
+  const text = await r.text();
+  const j = text ? JSON.parse(text) : null;
+  if (!r.ok) throw new Error(j?.message || `supabase ${r.status}`);
+  return j;
+}
+
 const mem = new Map(); // dev fallback: key → { v, exp }
 
 async function cmd(...args) {
+  if (supaEnv()) {
+    const [op, key, val] = args;
+    switch (op) {
+      case "GET":
+        return rpc("kv_get", { p_k: key });
+      case "SET": {
+        const exIdx = args.indexOf("EX");
+        return rpc("kv_set", {
+          p_k: key,
+          p_v: val,
+          p_ex: exIdx > 0 ? Number(args[exIdx + 1]) : null,
+          p_nx: args.includes("NX"),
+        });
+      }
+      case "DEL":
+        return rpc("kv_del", { p_k: key });
+      case "INCR":
+        return rpc("kv_incr", { p_k: key });
+      case "EXPIRE":
+        return rpc("kv_expire", { p_k: key, p_sec: Number(val) });
+      default:
+        throw new Error(`unsupported ${op}`);
+    }
+  }
   const env = redisEnv();
   if (env) {
     const r = await fetch(env.url, {
@@ -100,7 +143,7 @@ const err = (status, error, extra) => ({ status, json: { error, ...extra } });
 // ---------- Үйлдлүүд ----------
 
 export async function handleAccount(body = {}, authHeader = "") {
-  if (!redisEnv() && process.env.VERCEL) {
+  if (!supaEnv() && !redisEnv() && process.env.VERCEL) {
     return err(503, "Сервер дээр хадгалах сан холбогдоогүй байна.", { code: "no_storage" });
   }
   const token = authHeader.replace(/^Bearer\s+/i, "") || body.token;
